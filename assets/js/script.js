@@ -1,36 +1,21 @@
-// Declare the time variable
+// Daily-Planner-App Code
 
-var currentMoment = moment().format('dddd, MMMM Do');
-console.log(currentMoment);
-/*
-hours = ["9AM", "10AM"]
-for (let hour of hours){
-    createROw()
-    colorClass = getRowColorClass(hour)
-}
-
-function getRowColorClass(hour){
-    if (m.hour() === hour){
-        return "current"
-    } else if(m.hour() < hour) {
-        return "previous"
-    } else {
-        return "future"
-    }
-}
-
-function createROw()
-
-*/
-
-
- $('#currentDay').text(currentMoment); //You want me to make this a function too ?
-/* 
-Create a table with 3 columns 
-*/
 
 $(document).ready(function(){
+    //Declared variable for the current moment
+    var currentMoment = moment().format('dddd, MMMM Do');
+    // Variable for the different time blocks.
     const WORKING_HOURS = ['9AM', '10AM', '11AM', '12PM','1PM','2PM','3PM','4PM','5PM']
+
+    $('#currentDay').text(currentMoment); //
+
+    function getScheduledItemByHour(hour){
+        return localStorage.getItem(hour)
+    }
+
+    function storeScheduledItem(hour, scheduledItem){
+        localStorage.setItem(hour, scheduledItem)
+    }
 
     function createTimeDataEl(hour){
         var timeDataEl = $('<td>').addClass('hour').css({width: '5%'});
@@ -43,15 +28,16 @@ $(document).ready(function(){
     }
     
     function createSaveBtnEl(hour){
+        var btnContainer = $('<td>').addClass('saveBtn');
         var btn = $('<button><i class="fas fa-save"></i></button>');
+        
         btn.click(function(){
             // when user clicks save the item is stored on the local storage
             // we intend to save the item as a value in local storage using the hour as the key
             var scheduledItem = $(this).parent().siblings('textarea').val()
-            localStorage.setItem(hour, scheduledItem)
+            storeScheduledItem(hour, scheduledItem)
         });
     
-        var btnContainer = $('<td>').addClass('saveBtn');
         return btnContainer.append(btn)
     }
     
@@ -60,7 +46,10 @@ $(document).ready(function(){
         var timeDataEl = createTimeDataEl(hour);
         var textDataEl = createTextDataEl(colorClass);
         var saveBtnEl = createSaveBtnEl(hour);
-    
+        
+        //Here we retrieve the value of the scheduled item from the local storage and display it.
+        textDataEl.val(getScheduledItemByHour(hour))
+
         rowEl.append(timeDataEl);
         rowEl.append(textDataEl);
         rowEl.append(saveBtnEl);
@@ -102,8 +91,8 @@ $(document).ready(function(){
         return tableEl;
     }
     
-    var tableEl = createTable();
-    $('.container').append(tableEl);
+    // Calling and appening the function that creates the table.
+    $('.container').append(createTable());
 
 })
 
