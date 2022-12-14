@@ -35,7 +35,8 @@ The app should:
 
 
 ## Screen Shots
-![screencapture-Daily-Planner-App](https://user-images.githubusercontent.com/26630637/207569666-7487a2e3-257b-4c0c-b7a7-75061bb04043.png)
+![screencapture-file-daily-planner-app](https://user-images.githubusercontent.com/26630637/207604026-8b7b4087-06ab-440c-a97c-0ac54bc9c30c.png)
+
 
 ## Links
 Deployed project: https://goloobab.github.io/Daily-Planner-App/
