@@ -2,7 +2,7 @@
 
 ## Description 
 
-This project is a Daily planner written and developed using in Javascript JQuery. The user of this quiz/application will be presented with a start page witha start button. When the Start Quiz button is pressed the questions will start to display on the screen and the 60 seconds timer will starta  count down. A correct answer earns you a mark while a wron one deducts 10 second from the count down. The quiz ends when the time is up or when all the question are completed. Different players take this quiz and their different scores will be recorded together with their initials.  This is part of my learning journey  towards web development.
+This project is a Daily planner written and developed using in Javascript JQuery. The user of this application will be presented with a time blocks with save buttons. In the text areas are divided according to the working hour in a day, starting form 9AM to 5PM. The user will enter the plans for the given hour and click the save button (floppy disk image) to have the plan saved. The current hour is colored red, past hours are colored grey and the future hours are colored green. The plans will be saved on the local storage and even after a page refesh the plan details will still be present. 
 
 ## Task
 Creating  a simple calendar application that allows a user to save events for each hour of the day.
@@ -20,22 +20,23 @@ The app should:
 
 
 ## Challenges
-
-* Determing the data type to use for questions. 
-* saving the users input with scores.
+* Creating dynamic table elements.
+* creating an input area in the JQuery. 
 * Accessing saved records from the local storage.
-* Returning the arrays in a sorted format.
+* Persisting user input even after page refresh.
 
 ## Things I learned 
-* How useful it is to break down code using functions
-* Using API's in Vanilla javascript.
-* Havng different javascript files pointing to the same html.
+* Using moment.js
+* Adding CSS code in Qjuery
+* Creating HTML Elements and adding atrribute using JQuery
+* Application of functions.
+* Using API's with JQuery.
 * Making pages interactive with event listeners.
-* Storing data on the client side using the local storage. 
+* Storing data on the client side using the local storage and making it persist even after refreshing. 
 
 
 ## Screen Shots
-![screencapture-file-daily-planner-app](https://user-images.githubusercontent.com/26630637/207604026-8b7b4087-06ab-440c-a97c-0ac54bc9c30c.png)
+![screencapture-challenge-daily-planner-app](https://user-images.githubusercontent.com/26630637/207607030-ff1f36c4-babc-4d0d-8080-4b3f0944bd48.png)
 
 
 ## Links

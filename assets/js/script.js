@@ -23,7 +23,7 @@ $(document).ready(function(){
     }
     
     function createTextDataEl(colorClass){
-        var textDataEl = $('<textarea col-10>').attr('style','width:70%');
+        var textDataEl = $('<textarea col-10>').attr('style','width:80%');
         return textDataEl.addClass(colorClass);
     }
     
@@ -63,7 +63,7 @@ $(document).ready(function(){
     
     function getColorClass(hour){
         var currentHour = convertStringHourToMoment(moment().format('HA'));
-        var hour = convertStringHourToMoment(hour); //"1PM" -> {date: ....13:00:00, ..., ..}
+        var hour = convertStringHourToMoment(hour); //"1PM" -> {date: ...13:00:00, ..., ..}
 
         if (hour.isBefore(currentHour)){
             // if hour passed to function is before the current hour
