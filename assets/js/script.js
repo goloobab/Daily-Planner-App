@@ -23,7 +23,7 @@ $(document).ready(function(){
     }
     
     function createTextDataEl(colorClass){
-        var textDataEl = $('<textarea col-10>').attr('style','width:70%');
+        var textDataEl = $('<textarea col-10>').attr('style','width:80%');
         return textDataEl.addClass(colorClass);
     }
     
