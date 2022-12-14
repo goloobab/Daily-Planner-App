@@ -2,7 +2,7 @@
 
 ## Description 
 
-This is part of my learning journey  towards web development.This project is a Daily planner written and developed using in Javascript JQuery. The user of this application will be presented with a time blocks with save buttons. In the text areas are divided according to the working hour in a day, starting form 9AM to 5PM. The user will enter the plans for the given hour and click the save button (floppy disk image) to have the plan saved. The current hour is colored red, past hours are colored grey and the future hours are colored green. The plans will be saved on the local storage and even after a page refesh the plan details will still be present.
+This project is a Daily planner written and developed using in Javascript JQuery. The user of this application will be presented with a time blocks with save buttons. In the text areas are divided according to the working hour in a day, starting form 9AM to 5PM. The user will enter the plans for the given hour and click the save button (floppy disk image) to have the plan saved. The current hour is colored red, past hours are colored grey and the future hours are colored green. The plans will be saved on the local storage and even after a page refesh the plan details will still be present. 
 
 ## Task
 Creating  a simple calendar application that allows a user to save events for each hour of the day.
