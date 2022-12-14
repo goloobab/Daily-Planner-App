@@ -3,7 +3,7 @@
 
 $(document).ready(function(){
     var currentMoment = moment().format('dddd, MMMM Do');
-    const WORKING_HOURS = ['11PM','2AM','9AM', '10AM', '11AM', '12PM','1PM','2PM','3PM','4PM','5PM']
+    const WORKING_HOURS = ['9AM', '10AM', '11AM', '12PM','1PM','2PM','3PM','4PM','5PM']
 
     $('#currentDay').text(currentMoment);
 
