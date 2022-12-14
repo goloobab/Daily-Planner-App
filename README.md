@@ -20,13 +20,13 @@ The app should:
 
 
 ## Challenges
-
-* Determing the data type to use for questions. 
-* saving the users input with scores.
+* Creating dynamic table elements.
+* creating an input area in the JQuery. 
 * Accessing saved records from the local storage.
-* Returning the arrays in a sorted format.
+* Persisting user input even after page refresh.
 
 ## Things I learned 
+* Using moment.js
 * Adding CSS code in Qjuery
 * Creating HTML Elements and adding atrribute using JQuery
 * Application of functions.
