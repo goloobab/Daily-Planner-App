@@ -30,7 +30,7 @@ Create a table with 3 columns
 */
 
 $(document).ready(function(){
-    const WORKING_HOURS = ['11PM','12AM','9AM', '10AM', '11AM', '12PM','1PM','2PM','3PM','4PM','5PM']
+    const WORKING_HOURS = ['9AM', '10AM', '11AM', '12PM','1PM','2PM','3PM','4PM','5PM']
 
     function createTimeDataEl(hour){
         var timeDataEl = $('<td>').addClass('hour').css({width: '5%'});
