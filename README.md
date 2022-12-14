@@ -35,10 +35,10 @@ The app should:
 
 
 ## Screen Shots
-![Code-Quiz-index-html-2022-12-06-22_33_13](https://user-images.githubusercontent.com/26630637/206038539-f4c204c7-e399-4682-93f1-6061d7548a75.png)
+
 
 ## Links
-Deployed project: https://goloobab.github.io/Code-Quiz/
+Deployed project: https://goloobab.github.io/Daily-Planner-App/
 
 ## License 
 Please refer to the LICENSE enclosed in the repository
