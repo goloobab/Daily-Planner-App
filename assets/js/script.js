@@ -28,8 +28,8 @@ $(document).ready(function(){
     }
     
     function createSaveBtnEl(hour){
-        var btnContainer = $('<td>').addClass('saveBtn');
-        var btn = $('<button><i class="fas fa-save"></i></button>');
+        var btnContainer = $('<td>').addClass('saveBtn').css({width:'8%'}).attr('type', 'button');
+        var btn = $('<i class="fas fa-save"></i>');
         
         btn.click(function(){
             // when user clicks save the item is stored on the local storage
