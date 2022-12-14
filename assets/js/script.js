@@ -1,11 +1,13 @@
-// Declare the time variable
+// Daily-Planner-App Code
 
 
 $(document).ready(function(){
+    //Declared variable for the current moment
     var currentMoment = moment().format('dddd, MMMM Do');
+    // Variable for the different time blocks.
     const WORKING_HOURS = ['9AM', '10AM', '11AM', '12PM','1PM','2PM','3PM','4PM','5PM']
 
-    $('#currentDay').text(currentMoment);
+    $('#currentDay').text(currentMoment); //
 
     function getScheduledItemByHour(hour){
         return localStorage.getItem(hour)
@@ -45,7 +47,7 @@ $(document).ready(function(){
         var textDataEl = createTextDataEl(colorClass);
         var saveBtnEl = createSaveBtnEl(hour);
         
-        //Here we retrieve the scheduled item from the local storage and dispaly it.
+        //Here we retrieve the value of the scheduled item from the local storage and display it.
         textDataEl.val(getScheduledItemByHour(hour))
 
         rowEl.append(timeDataEl);
@@ -89,7 +91,7 @@ $(document).ready(function(){
         return tableEl;
     }
     
-    // var tableEl = createTable();
+    // Calling and appening the function that creates the table.
     $('.container').append(createTable());
 
 })
