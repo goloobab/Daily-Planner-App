@@ -35,7 +35,7 @@ The app should:
 
 
 ## Screen Shots
-![screencapture-file-daily-planner-app](https://user-images.githubusercontent.com/26630637/207604026-8b7b4087-06ab-440c-a97c-0ac54bc9c30c.png)
+![screencapture-challenge-daily-planner-app](https://user-images.githubusercontent.com/26630637/207607030-ff1f36c4-babc-4d0d-8080-4b3f0944bd48.png)
 
 
 ## Links
