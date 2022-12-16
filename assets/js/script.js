@@ -27,6 +27,7 @@ $(document).ready(function(){
         return textDataEl.addClass(colorClass);
     }
     
+    //Function that generates the Save buttons
     function createSaveBtnEl(hour){
         var btnContainer = $('<td>').addClass('saveBtn').css({width:'8%'}).attr('type', 'button');
         var btn = $('<i class="fas fa-save"></i>');
@@ -79,6 +80,7 @@ $(document).ready(function(){
         return "present"
     }
     
+    // This function creates the 
     function createTable(){
         var tableEl = $('<table>').addClass('table col-12');
     
@@ -91,7 +93,7 @@ $(document).ready(function(){
         return tableEl;
     }
     
-    // Calling and appening the function that creates the table.
+    // Calling and appending the createTable function that creates the table.
     $('.container').append(createTable());
 
 })
